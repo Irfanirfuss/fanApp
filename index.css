@@ -1,0 +1,55 @@
+#img {
+    border: 10px solid cyan;
+    padding: 20px;
+    border-radius: 50%;
+    animation: rot linear infinite;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-con {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+button:nth-child(2) {
+    background-color: green;
+}
+
+button:nth-child(1) {
+    background-color: red;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 10px 10px black;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
